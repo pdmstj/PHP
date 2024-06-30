@@ -1,0 +1,349 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10pt;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+}
+
+header .search-bar .form-control {
+    border: none;
+    padding: 0.5rem;
+}
+
+header .search-bar .input-group-text {
+    background-color: #ffffff;
+    border: none;
+}
+
+header .search-bar .input-group-text img {
+    width: 20px;
+}
+
+header .user-actions img {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+nav .nav-link {
+    color: #000;
+    font-weight: bold;
+    position: relative;
+    word-spacing: normal;
+}
+
+nav .nav-link:hover {
+    color: #000000;
+}
+
+/* 배너 이미지 크기 설정 */
+.carousel-item img {
+    width: 100%;
+    height: 450px; /* 배너 이미지 높이 설정 */
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+}
+
+/* 제품 이미지 크기 설정 */
+.products .product .card-img-top {
+    width: 100%;
+    height: 300px; /* 제품 이미지 높이 설정 */
+    object-fit: cover;
+}
+
+.products .product {
+    transition: transform 0.2s;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    
+}
+
+.product .card-img-top {
+    transition: transform 0.2s;
+}
+
+
+
+.product .card-body {
+    padding: 1rem;
+    line-height: 1.5;
+    position: relative;
+
+}
+
+.product .product-info {
+    margin-bottom: 2px;
+}
+
+.product .total {
+    font-size: 12px;
+    color: #aaaaaa;
+    margin-right: 2px;
+    text-decoration: line-through;
+}
+.product .total_1 {
+    font-size: 10px;
+    color: rgba(209, 4, 4, 0.59);
+    line-height: 1;
+
+}
+.product .discount {
+    font-size: 15px;
+    color: red;
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.product .product-name {
+    font-size: 16px;
+    color: #424242;
+    line-height: 1.3; 
+}
+
+.product .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 2px;
+}
+
+.product .product-price .currency {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+
+.product-image:hover .heart-icon {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header .logo img {
+        width: 80px;
+    }
+    header .search-bar {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+    .carousel-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* 미디어 쿼리: 화면이 축소될 때 head 클래스를 숨깁니다 */
+@media (max-width: 768px) {
+    .head {
+        display: none;
+    }
+    .carousel-inner {
+        height: auto; /* 높이를 자동으로 설정 */
+        max-height: 100%; /* 최대 높이를 부모 컨테이너에 맞춤 */
+        padding: 0; /* 패딩 제거 */
+        margin: 0; /* 마진 제거 */
+    }
+    .Goods .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.name {
+  text-align: center;  
+  margin-top: 120px;
+  margin-bottom: 200px;
+  color: #6d6d6d;
+}
+
+.name1 {
+    text-align: center; 
+    margin-top: 120px;
+    line-height: 1px;
+    margin-bottom: -25px;
+    color: #6d6d6d;
+  }
+
+.name2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6d6d6d; 
+    line-height: 1px;
+}
+
+.name3 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6d6d6d; 
+    line-height: 1px;
+    margin-top: 100px;
+    
+}
+
+.tags {
+    text-align: center;
+    margin: 20px 0;
+}
+.tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    color: gray;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.tag.active {
+    background-color: #C7918A; /* 핑크 색상 */
+    color: white;
+}
+
+.name4 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6d6d6d; 
+    line-height: 1px;
+    margin-top: 100px;
+    margin-bottom: -25px;
+}
+
+/* Horizontal scroll 스타일링 */
+.horizontal-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 20px;
+}
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal-scroll li {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 20px; /* 아이템 간의 간격 조절 */
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+
+.horizontal-scroll li a {
+    text-decoration: none; /* 링크의 기본 밑줄 제거 */
+    color: inherit; /* 링크 색상을 부모 요소와 동일하게 설정 */
+}
+
+.horizontal-scroll li img {
+    width: 305px; /* 이미지 너비 조정 */
+    height: 420px; /* 이미지 높이 자동 조정 */
+    border-radius: 2%;
+}
+
+.horizontal-scroll li span {
+    display: block; /* 블록 요소로 설정하여 이미지 아래에 텍스트 표시 */
+    margin-top: 5px; /* 이미지와 텍스트 사이의 간격 조절 */
+}
+
+/* Styling carousel section */
+#stylingCarousel {
+    position: relative;
+}
+
+#stylingCarousel .carousel-inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+#stylingCarousel .carousel-item {
+    transition: transform 0.6s ease;
+}
+
+#stylingCarousel .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 30px 0;  
+
+
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.product-item {
+    margin: 10px;
+    text-align: center;
+    width: 230px;
+  /*  width: calc(25% - 20px); /* 4 items per row, minus margins */
+}
+.product-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.product-caption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* 작은 화면에서는 2개씩 */
+    }
+}
+
+@media (min-width: 769px) {
+    .product-item {
+        width: calc(20% - 20px); /* 큰 화면에서는 5개씩 */
+    }
+}
