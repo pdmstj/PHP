@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ps.o</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="shoppingmall.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+        <div class="logo">
+            <img src="img/PHP.png" alt="Logo" class="img-fluid">
+        </div>
+        <div class="search-bar input-group">
+            <input type="text" class="form-control" placeholder="검색">
+            <span class="input-group-text">
+                <img src="img/검색.png" alt="Search Icon" class="img-fluid">
+            </span>
+        </div>
+        <div class="user-actions d-flex">
+            <a href="membership.php">
+            <img src="img/내정보.png" alt="My Page" class="img-fluid mx-2">
+            </a>
+            <img src="img/좋아요.png" alt="Login" class="img-fluid mx-2">
+            <img src="img/장바구니.png" alt="Cart" class="img-fluid mx-2">
+            <img src="img/전체.png" alt="All" class="img-fluid mx-2">
+        </div>
+    </header>
+    <nav class="bg-light py-2">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">베스트</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">신상</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">추천</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">니트</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">원피스</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">스커트</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="container my-5">
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/배너6.jpg" class="d-block w-100 rounded" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/배너2.jpg" class="d-block w-100 rounded" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/배너3.png" class="d-block w-100 rounded" alt="Banner 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/배너4.jpg" class="d-block w-100 rounded" alt="Banner 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/배너5.jpg" class="d-block w-100 rounded" alt="Banner 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- STYLING Section -->
+        <div class="name">
+            <h4>ps.o는</h4>
+            <p>
+                여러분의 따뜻한 쇼핑 친구가 되고 싶습니다. <br>
+                누구나 편안하게 입을 수 있는 실용적인 의류부터 <br>
+                특별한 날을 더욱 반짝이게 해줄 멋진 아이템들까지, <br>
+                언제나 ps.o에서 함께 만나보세요 :) <br>
+            
+            </p>
+        </div>
+
+        <div class="name2">
+            <p>지금 주목해야 할 베스트 상품📌</p>
+            <h4>BEST PRODUCT</h4>
+        </div>
+        <ul id="header_navi" class="horizontal-scroll">
+            
+            <li><a href="product_detail.php?id=1"><img src="img/여리핏 써머 니트 가디건.gif"><span>[누적15만장✨/투웨이/여리한무드]<br>여리핏 써머 니트 가디건 - 7 Color</span>
+            <p><span style="color: gray; text-decoration: line-through;">48,000원</span> 36,900원</p></a></li>
+
+            <li><a href="product_detail.php?id=2"><img src="img/모이 조던 후드 집업 점퍼.gif"><span>[누적5만장✨/가성비템/바람막이/바스락]<br>모던 조이 후드 집업점퍼 - 6 Color</span>
+            <p><span style="color: gray; text-decoration: line-through;">24,900원</span> 16,900원</p></a></li></a></li>
+
+            <li><a href="product_detail.php?id=3"><img src="img/포스트 와이드팬츠.gif"><span>[누적12만장✨/여름ver추가!/롱,숏,기본,3단기장]<br>포스트 와이드팬츠 - 3 Color</span>
+            <p><span style="color: gray; text-decoration: line-through;">46,000원</span> 34,900원</p></a></li></a></li>
+            
+            <li><a href="product_detail.php?id=4"><img src="img/하트 티셔츠.gif"><span>[주문폭주!✨/비침X/안감X]<br>하트 부스 티셔츠 - 2 Color</span>
+            <p>18,000원</p></a></li>
+
+            <li><a href="product_detail.php?id=5"><img src="img/모먼트 모달 반팔티셔츠.gif"><span>[누적3만장✨/질좋은반팔티/기본티]<br>모먼트 모달 반팔티셔츠 - 6 Color</span>
+            <p><span style="color: gray; text-decoration: line-through;">21,000원</span> 16,900원</p></a></li></a></li>
+
+            <li><a href="product_detail.php?id=6"><img src="img/슬러쉬 스트링 퍼프 롱원피스.gif"><span>[누적3천장✨/컬러추가/휴양지]<br>슬러쉬 스트링 퍼프 롱 원피스 - 4 Color</span>
+            <p>57,000원</p></a></li>
+        
+            <li><a href="product_detail.php?id=7"><img src="img/코튼 스판 베이직 반팔 티셔츠.gif"><span>[누적80만장✨/극찬후기/스판/크롭/이너/건조기능]<br>코튼 스판 베이직 반팔 티셔츠 - 24 Color</span>
+            <p><span style="color: gray; text-decoration: line-through;">25,000원</span> 18,900원</p></a></li></a></li>
+      
+            <li><a href="product_detail.php?id=8"><img src="img/워크 바스락 밴딩 팬츠.gif"><span>[누적2만장✨/와이드핏/2기장/카고ver추가!<br>워크 바스락 밴딩팬츠 - 7 Color</span>
+            <p><span style="color: gray; text-decoration: line-through;">25,000원</span> 18,900원</p></a></li></a></li>
+
+            <li><a href="product_detail.php?id=9"><img src="img/네츄럴 코튼 4부팬츠.gif"><span>[누적2만장✨/후기인증/하이웨스트<br>워네츄럴 코튼 4부팬츠 - 2 Color</span>
+            <p><span style="color: gray; text-decoration: line-through;">39,000원</span> 29,900원</p></a></li></a></li>
+        
+            <li><a href="product_detail.php?id=10"><img src="img/투게더 인생 스판팬츠.gif"><span>[누적7만장✨/교복팬츠/재구매1등<br>투게더 인생 스판팬츠 - 3 Color</span>
+            <p><span style="color: gray; text-decoration: line-through;">36,000원</span> 24,900원</p></a></li></a></li>
+
+            </ul>
+
+
+        <!-- Product Section -->
+
+        <div class="name1">
+            <p>안녕, 여름아🌿 신상템과 함께 하자</p>
+            <h4>NEW ITEM</h4>
+        </div>
+
+        <section class="products mt-5">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/캘리 투피스 세트.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">쿠폰최대할인가</span>
+                            <span class="total">30,000</span><br>
+                            <img src="img/할인.png" alt="할인">
+                            <span class="discount">41%</span>
+                            <span class="product-price">17,550<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">(나시+셔츠set♥) <br>캘리 투피스 세트</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/릴리 프릴 진주 골지 여름 가디건.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">쿠폰최대할인가</span>
+                            <span class="total">30,000</span><br>
+                            <img src="img/할인.png" alt="할인">
+                            <span class="discount">31%</span>
+                            <span class="product-price">20,520<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">(여름까지쭈욱!/여리핏♥)<br>릴리 프릴 진주 골지 여름 가디건</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/데이진 코튼 카고 팬츠.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">쿠폰최대할인가</span>
+                            <span class="total">59,000</span><br>
+                            <img src="img/할인.png" alt="할인">
+                            <span class="discount">67%</span>
+                            <span class="product-price">19,470<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">Day Jeans No.30<br>데이진 코튼 카고 팬츠</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/헌티 버튼 플랩포켓 롱 워싱 데님 나시 원피스.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">쿠폰최대할인가</span>
+                            <span class="total">54,000</span><br>
+                            <img src="img/할인.png" alt="할인">
+                            <span class="discount">39%</span>
+                            <span class="product-price">32,850<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">(뒷밴딩/꾸안꾸) 헌티 버튼 플랩포켓 롱 워싱 데님 나시 원피스</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/모어드 린넨 라이크 여름 핀턱 숏팬츠.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">쿠폰최대할인가</span>
+                            <span class="total">52,000</span><br>
+                            <img src="img/할인.png" alt="할인">
+                            <span class="discount">44%</span>
+                            <span class="product-price">28,800<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">(3사이즈/린넨라이크) 모어드 린넨 라이크 여름 핀턱 숏팬츠</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/모어드 린넨 라이크 여름 반팔 자켓.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">쿠폰최대할인가</span>
+                            <span class="total">100,000</span><br>
+                            <img src="img/할인.png" alt="할인">
+                            <span class="discount">46%</span>
+                            <span class="product-price">53,910<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">(2사이즈/링클프리/여름내내) 모어드 린넨 라이크 여름 반팔 자켓</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/티니 시어서커 스트라이프 셔츠 미니 원피스.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">쿠폰최대할인가</span>
+                            <span class="total">48,000</span><br>
+                            <img src="img/할인.png" alt="할인">
+                            <span class="discount">31%</span>
+                            <span class="product-price">33,000<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">(여름쿨원단/청량미) 티니 시어서커 스트라이프 셔츠 미니 원피스</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/메이든 썸머 시스루 긴팔 블라우스 셔츠.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">쿠폰최대할인가</span>
+                            <span class="total">48,000</span><br>
+                            <img src="img/할인.png" alt="할인">
+                            <span class="discount">40%</span>
+                            <span class="product-price">28,000<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">(살안타템/루즈핏/2way) 메이든 썸머 시스루 긴팔 블라우스 셔츠</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 추가 제품 -->
+            </div>
+        </section>
+
+        <div class="name4">
+            <p>오늘출발 새벽도착 오늘도착 🚚</p>
+            <h4>오 늘 출 발</h4>
+        </div>
+        <section class="products mt-5">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/데이즈 린넨 부클 라운드넥 데일리 반팔 니트.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">오늘출발 할인가</span>
+                            <span class="total">30,000</span><br>
+                            <span class="product-price">21,420<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">[당일출발] 데이즈 린넨 부클 라운드넥 데일리 반팔 니트 - 12 Color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/메이킹 스트 라이프 셔츠.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">오늘출발 할인가</span>
+                            <span class="total">52,000</span><br>
+                            <span class="product-price">39,900<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">[오버핏/당일출발] 메이킹 스트라이프 셔츠 - 3 Color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/모모 체크 셔츠.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">오늘출발 할인가</span>
+                            <span class="total">46,000</span><br>
+                            <span class="product-price">34,900<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">[살안타템/당일출발] 모모 체크 셔츠 - 2 Color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/썸데이 데일리 롱 원피스.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">오늘출발 할인가</span>
+                            <span class="total">43,000</span><br>
+                            <span class="product-price">32,900<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">[누적3만장✨/당일출발] 썸데이 데일리 롱원피스 - 5 Color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/온 데일리 단가라 반팔 티셔츠.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">오늘출발 할인가</span>
+                            <span class="total">24,000</span><br>
+                            <span class="product-price">17,900<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">[누적1만장✨/당일출발] 온 데일리 단가라 반팔 티셔츠 - 4 Color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/워크 바스락 밴딩 팬츠.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">오늘출발 할인가</span>
+                            <span class="total">35,000</span><br>
+                            <span class="product-price">26,900<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">[누적2만장✨/당일출발] 워크 바스락 밴딩 팬츠 - 7 Color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/유얼 썸머 나시 가디건 세트.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">오늘출발 할인가</span>
+                            <span class="total">35,000</span><br>
+                            <span class="product-price">28,900<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">[가성비굿/당일출발] 유얼 썸머 나시 가디건 세트 - 6 Color</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product card">
+                        <img src="img/테키 투웨이 후드집업.gif" alt="Product 1" class="card-img-top rounded">
+                        <div class="card-body">
+                            <span class="total_1">오늘출발할인가</span>
+                            <span class="total">39,600</span><br>
+                            <span class="product-price">19,800<span class="currency">원</span></span><br>
+                            <p class="product-name card-title">[당일출발] 테키 투웨이 후드 집업 - 4 Color (크롭/골지)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 추가 제품 -->
+            </div>
+        </section>
+
+        <section class="products mt-5">
+        <div class="name3">
+            <p>완전 지금이 딱이야</p>
+            <h4>#우리들의 계절🍂</h4>
+        </div>
+        <div class="tags">
+            <span class="tag" data-category="summer">#여름</span>
+            <span class="tag" data-category="resort">#휴양지룩</span>
+            <span class="tag" data-category="guest">#하객룩</span>
+            <span class="tag" data-category="icepants">#아이스바지</span>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+           
+            <div class="col-6 col-md-4 col-lg-3 mb-4">
+                
+            </div>
+        </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-light py-3 mt-5">
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2024 ps.o All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="shoppingmall.js"></script>
+</body>
+</html>
