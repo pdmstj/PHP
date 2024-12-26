@@ -98,20 +98,19 @@ if (!$product) {
             transition: background-color 0.3s ease;
         }
         .buy-now-button {
-            background-color: #28a745;
-            color: white;
             font-weight: bold;
             flex: 1;
-        }
-        .buy-now-button:hover {
-            background-color: #218838;
-        }
-        .add-to-cart-button {
-            background-color: #0275d8;
+            background-color: #D8A69D;
             color: white;
         }
+        .buy-now-button:hover {
+            background-color: #C7918A;
+        }
+        .add-to-cart-button {
+         
+        }
         .add-to-cart-button:hover {
-            background-color: #025aa5;
+            
         }
         .back-link {
             margin-top: 30px;
@@ -133,6 +132,11 @@ if (!$product) {
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+
+        .like-button{
+
+        }
+
     </style>
 </head>
 <body>
@@ -165,9 +169,9 @@ if (!$product) {
 
                 <!-- 버튼 -->
                 <div class="actions">
+                    <button class="like-button">❤ 좋아요</button>
                     <button class="add-to-cart-button">🛒 장바구니</button>
                     <button class="buy-now-button">💳 바로 구매</button>
-                    <button class="like-button">❤ 좋아요</button>
                 </div>
                 <a href="shoppingmall.html" class="back-link">목록으로 돌아가기</a>
             </div>
